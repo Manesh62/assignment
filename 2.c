@@ -246,7 +246,7 @@ break;
 	int n,i;
 	printf("enter the n number of which you want to get prime factor");
 	scanf("%d",&n);
-	for(i=2;n>2;i++)
+	for(i=2;i<=n;i++)
 	{
 		while(n%i==0)
 		{
