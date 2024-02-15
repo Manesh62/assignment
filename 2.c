@@ -251,7 +251,7 @@ break;
 		while(n%i==0)
 		{
 			printf("%d is prime factor\n",i);
-			n=n/2;
+			n=n/i;
 		}
 	 
 	}
