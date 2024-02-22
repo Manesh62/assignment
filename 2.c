@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+#include<stdlib.h>// contain some function like exit to terminate
 int main()
 {
 	int c;
@@ -7,7 +8,7 @@ int main()
 	m='p';
 	while(m =='p')
     {
-
+    printf("0 for the exit\n");
 	printf("1 for the sum of two number\n");
 	printf("2 for the simple interst\n");
 	printf("3 for number is positive or negative\n");
@@ -28,6 +29,10 @@ int main()
     	scanf("%d",&c);
 	switch(c)
 	{
+		case 0:
+			{
+				exit(EXIT_SUCCESS);
+			}
 		case 1:
     {
 						
@@ -111,7 +116,7 @@ int main()
         sum =sum+i;
     }  
     printf("\n Sum of the first %d number is: %d\n",n,sum);   
-    getch();  
+    
 	break;	 
     }
 	 case 7:
