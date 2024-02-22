@@ -157,13 +157,13 @@ break;
 	{
 		rs=4*unit;
 	}
-	else if(unit>20 && unit<=120)
+	else if(unit<=120)
 	{
-		rs=80+(unit-20)*0.08;
+		rs=80+(unit-20)*8;
 	}
-	else if(unit>120)
+	else
 	{
-		rs=80+100*0.08+(unit-120)*10;
+		rs=80+100*8+(unit-120)*10;
 	}
 	printf("the electricity bill of %.2f unit is %.2f\n\n  ",unit,rs);	
 }
